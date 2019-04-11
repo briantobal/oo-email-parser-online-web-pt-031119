@@ -7,11 +7,9 @@ class EmailParser
   end 
   
   def parse
-  
     emails.split.map do |x|
       x.split(",")
     end.flatten.uniq
-  
   end
 end 
 
